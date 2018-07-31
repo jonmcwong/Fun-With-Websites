@@ -1,0 +1,35 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Lost</title>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body onload=showAttempts()>
+	<h1>You Lost</h1>
+	<p>You carry on running. For some reason you hit the hurdle and start falling. You hit the floor and your imaginary opponent runs ahead of you and wins the race.</p>
+	<p>Better luck next time</p>
+	<p id="Attempts"></p>
+	<br></br>
+	<a href="Start.html">Ask your imaginary friend if they want to race again</a>
+	<script type="text/javascript" src="logic.js">
+		window.onload = showAttempts;
+	</script>
+
+</body>
+</html>

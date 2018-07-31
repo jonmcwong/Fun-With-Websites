@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>You Won!</title>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body onload=showAttempts()>
+	<h1>You Won!</h1>
+	<p>Congratulations. You zoom ahead of your imaginary oponent and run the 2 hurdle race in 4.37 seconds!! A galaxy record</p>
+	<img src="http://www.lulamshort.com/wp-content/uploads/2011/12/winning-the-race.jpg"
+	height=400>
+	<br />
+	<p id="Attempts"></p>
+	<a href="Start.html">Ask your imaginary friend if they want to race again</a>
+	<script type="text/javascript" src="logic.js">
+		window.onload = showAttempts;
+	</script>
+
+</body>
+</html>
